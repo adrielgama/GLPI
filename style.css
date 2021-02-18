@@ -72,6 +72,11 @@ blockquote p {
 }
 
 .images__logo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.images__logo > img {
   width: auto;
   height: 100%;
 }
@@ -230,6 +235,18 @@ ol.list__number > li {
 /* ================= */
 /* TEXT ITEM CUSTOM */
 /* =============== */
+
+@media screen and (max-width: 1010px) {
+  .images__logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .images__logo > img {
+    max-width: 200px;
+    height: 100%;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .sidenav {

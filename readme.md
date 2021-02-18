@@ -8,11 +8,11 @@
 
 #
 
-### > Sobre o GLPI
+### Sobre o GLPI
 
 O **GLPI** é uma aplicação de gestão de serviços e gerenciamento de ativos 100% web. Foi prioritariamente desenvolvida para atender às necessidades de Gestores de TI no gerenciamento de chamados de Helpdesk e transformou-se numa poderosa plataforma de gerenciamento de ativos e serviços, provendo aos gestores informações “on time” de seus recursos físicos e humanos.
 
-### > Principais Funcionalidades
+### Principais Funcionalidades
 
 - 100% online;
 - Sistema de abertura, acompanhamento e notificação de chamados por e-mail;
@@ -31,11 +31,15 @@ O **GLPI** é uma aplicação de gestão de serviços e gerenciamento de ativos 
 
 <!-- toc -->
 
+- [Documentação GLPI - Ramiro Campelo](#documentação-glpi---ramiro-campelo)
+    - [Sobre o GLPI](#sobre-o-glpi)
+    - [Principais Funcionalidades](#principais-funcionalidades)
+    - [Sumário](#sumário)
 - [Página Inicial](#página-inicial)
-  - [Login](#login)
+  - [Login:](#login)
 - [Início GLPI](#início-glpi)
-  - [Interface Padrão](#interface-padrão)
-  - [Interface Administrativa e Suporte](#interface-administrativa-e-suporte)
+    - [Interface Padrão:](#interface-padrão)
+    - [Interface Administrativa e Suporte](#interface-administrativa-e-suporte)
 - [Chamados](#chamados)
   - [Abertura de chamado](#abertura-de-chamado)
   - [Acompanhamento de chamado](#acompanhamento-de-chamado)
