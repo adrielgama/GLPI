@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  /* list-style: none; */
+  border: 0;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.8em 0;
+  line-height: 1.33;
+}
+
+blockquote,
+p {
+  margin: 1.2em 0;
+}
+
+/* a {
+} */
+
+body {
+  background-color: #f3f3f3;
+  margin-left: 290px; /* Controle distanciamento do sidenav left */
+  padding: 0px 10px;
+}
+
+blockquote {
+  /* color: rgba(0, 0, 0, 0.5); */
+
+  padding-left: 1.5em !important;
+  padding: 2px 0;
+  border-left: 5px solid rgba(0, 0, 0, 0.1);
+
+  /* width: 100%; */
+  color: #a7a7a7;
+  text-align: left;
+}
+
+blockquote p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.block__header {
+  margin-top: -20px !important;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.container-body {
+  padding: 5px;
+}
+
+.images {
+  width: 100%;
+  border: 5px solid #d1d1d1;
+  /* margin: 30px 0; */
+  /* max-width: 700px; */
+  /* height: auto; */
+}
+
+.images__logo {
+  width: auto;
+  height: 100%;
+}
+
+.logo__img {
+  margin-left: 70px;
+  max-width: 100px;
+  padding-bottom: 20px;
+}
+
+.sidenav {
+  text-align: left !important;
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #707070;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #1b1b1b;
+}
+
+.sidenav__:hover {
+  background-color: #f3f3f3;
+}
+
+.active {
+  background-color: #f3f3f3;
+}
+
+.active > .sidenav__ a {
+  color: #1b1b1b;
+}
+
+.badges > img {
+  padding-left: 10px;
+}
+
+.copyright {
+  display: grid;
+  place-items: center;
+  width: 280px;
+  position: fixed;
+  bottom: 10px;
+}
+
+.copyright > a {
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: 500;
+  /* font-family: "Lato", sans-serif; */
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+
+.copyright > a:hover {
+  color: #4d4d4d;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #252525;
+}
+
+hr {
+  margin: 70px 0 50px 0;
+  border: 0;
+  height: 1px;
+  background: #cecece;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.082);
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 8px;
+}
+
+.link__body {
+  color: rgb(98, 185, 255) !important;
+}
+
+/* ================= */
+/* TEXT ITEM CUSTOM */
+/* =============== */
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.75);
+  tab-size: 4;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+h1:after,
+h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.33em;
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.33);
+}
+
+p {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+ul.list__view {
+  margin-left: 30px;
+  list-style-type: square;
+  display: list-item;
+  color: #6d6d6d;
+}
+
+ul.list__view > li {
+  margin-top: 7px;
+}
+
+ol.list__number {
+  margin-left: 30px;
+  list-style-type: decimal;
+  /* display: list-item; */
+  color: #6d6d6d;
+}
+
+.contrast {
+  /* font-size: 1.4rem; */
+  color: #4e4e4e;
+  font-weight: 900;
+}
+
+ol.list__number > li {
+  margin-top: 7px;
+}
+
+/* ================= */
+/* TEXT ITEM CUSTOM */
+/* =============== */
+
+@media screen and (max-width: 600px) {
+  .sidenav {
+    width: 180px;
+  }
+
+  body {
+    margin-left: 175px;
+  }
+
+  .logo__img {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    width: 180px;
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* ================= */
+/* SCROLLBAR CUSTOM */
+/* =============== */
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #bbb;
+}
+
+/* ================= */
+/* SCROLLBAR CUSTOM */
+/* =============== */
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #707070;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-btn:hover {
+  color: #cccccc;
+}
+
+.active {
+  background-color: #f3f3f3;
+  color: #2c2c2c;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 18px;
+  color: rgb(184, 184, 184);
+}
