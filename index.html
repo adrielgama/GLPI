@@ -13,6 +13,14 @@
     <link rel="icon" href="icon2.png" sizes="16x16" type="image/png" />
   </head>
   <body>
+    <nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </nav>
     <!-- START NAVBAR -->
     <div class="sidenav">
       <!-- <div class="contenedor-menu"> -->
@@ -170,7 +178,10 @@
 
           <p>
             Para fazer o acesso ao GLPI o usuário deverá acessar digitando IP
-            <a href="http://10.99.2.7/">http://10.99.2.7/</a> em seu navegador.
+            <a href="http://10.99.2.7/" class="link__body" target="_blank"
+              >http://10.99.2.7/</a
+            >
+            em seu navegador.
           </p>
         </section>
 
@@ -601,6 +612,10 @@
         </section>
       </div>
     </main>
+    <!-- -------------------------------------------
+    ########## FIM DO BODY CONTAINER  ##############
+    -------------------------------------------- -->
     <script src="js/dropdown.js"></script>
+    <script src="js/dark.js"></script>
   </body>
 </html>
