@@ -14,6 +14,7 @@
   <body>
     <!-- START NAVBAR -->
     <div class="sidenav">
+      <!-- <div class="contenedor-menu"> -->
       <a href="#header">
         <img
           src="https://i.ibb.co/7QwyRpD/gruporclogo4-PNG.png"
@@ -21,6 +22,7 @@
           class="logo__img"
         />
       </a>
+
       <div id="sidenav__script">
         <a href="#section-1" class="sidenav__">Página Inicial</a>
         <a href="#section-2" class="sidenav__">Login</a>
@@ -30,29 +32,7 @@
           Interface Administrativa e Suporte
         </a>
 
-        <!-- https://codepen.io/chriscoyier/pen/qyELzd -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-        <!-- CONTINUE -->
-
-        <button class="dropdown-btn" onclick="dropanimatedFunction()">
+        <button class="dropdown-btn">
           Chamados
           <i class="fa fa-caret-down"></i>
         </button>
@@ -71,6 +51,7 @@
 
         <a href="#section-14" class="sidenav__"> Dashboard</a>
       </div>
+
       <div class="copyright">
         <a
           href="https://github.com/adrielgama/GLPI"
@@ -129,7 +110,7 @@
     </div>
 
     <!-- -------------------------------------------
-    ######## INICIO DO CONTAINER BODY  #############
+    ######## INICIO DO BODY CONTAINER  #############
     -------------------------------------------- -->
     <main>
       <div class="container-body">
@@ -619,71 +600,6 @@
         </section>
       </div>
     </main>
-
-    <script>
-      var header = document.getElementById("sidenav__script");
-      var sidenavSelect = header.getElementsByClassName("sidenav__");
-      for (var i = 0; i < sidenavSelect.length; i++) {
-        sidenavSelect[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          if (current.length > 0) {
-            current[0].className = current[0].className.replace(" active", "");
-          }
-          this.className += " active";
-        });
-      }
-    </script>
-
-    <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
-      }
-    </script>
-
-    <script>
-      let mainNavLinks = document.querySelectorAll("nav ul li a");
-      let mainSections = document.querySelectorAll("main section");
-
-      let lastId;
-      let cur = [];
-
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", (event) => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link) => {
-          let section = document.querySelector(link.hash);
-
-          if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
-          ) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
-    </script>
+    <script src="js/dropdown.js"></script>
   </body>
 </html>

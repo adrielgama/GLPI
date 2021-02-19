@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   vertical-align: baseline;
-  /* list-style: none; */
   border: 0;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
@@ -25,9 +24,6 @@ p {
   margin: 1.2em 0;
 }
 
-/* a {
-} */
-
 body {
   background-color: #f3f3f3;
   margin-left: 290px; /* Controle distanciamento do sidenav left */
@@ -35,8 +31,6 @@ body {
 }
 
 blockquote {
-  /* color: rgba(0, 0, 0, 0.5); */
-
   padding-left: 1.5em !important;
   padding: 2px 0;
   border-left: 5px solid rgba(0, 0, 0, 0.1);
@@ -66,9 +60,6 @@ blockquote p {
 .images {
   width: 100%;
   border: 5px solid #d1d1d1;
-  /* margin: 30px 0; */
-  /* max-width: 700px; */
-  /* height: auto; */
 }
 
 .images__logo {
@@ -80,6 +71,10 @@ blockquote p {
   width: auto;
   height: 100%;
 }
+
+/* ================== */
+/* SIDENAVBAR CUSTOM */
+/* ================ */
 
 .logo__img {
   margin-left: 70px;
@@ -109,7 +104,7 @@ blockquote p {
 }
 
 .sidenav a:hover {
-  color: #1b1b1b;
+  color: #707070;
 }
 
 .sidenav__:hover {
@@ -120,9 +115,9 @@ blockquote p {
   background-color: #f3f3f3;
 }
 
-.active > .sidenav__ a {
-  color: #1b1b1b;
-}
+/* ================== */
+/* SIDENAVBAR CUSTOM */
+/* ================ */
 
 .badges > img {
   padding-left: 10px;
@@ -140,7 +135,6 @@ blockquote p {
   color: #4d4d4d;
   text-align: center;
   font-weight: 500;
-  /* font-family: "Lato", sans-serif; */
   letter-spacing: 1px;
   font-size: 0.7rem;
 }
