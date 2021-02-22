@@ -9,7 +9,7 @@
   --font-color: rgba(0, 0, 0, 0.75);
   --h2-line-bottom: rgba(128, 128, 128, 0.33);
   --ul-ol-color: #6d6d6d;
-  --contrast-color: #4e4e4e;
+  --contrast-color: #ff6a13;
   --code-color: rgba(0, 0, 0, 0.082);
   --link-color: rgb(98, 185, 255);
 }
@@ -292,6 +292,24 @@ ol.list__number > li {
   }
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .copyright {
+    width: 170px;
+  }
+
+  .copyright > a {
+    font-size: 0.8rem;
+  }
+
+  .images__logo {
+    display: grid;
+  }
+
+  .images__logo > img {
+    width: 180px;
   }
 }
 
