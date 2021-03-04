@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentação GLPI - Ramiro Campelo</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="icon" href="icon2.png" sizes="16x16" type="image/png" />
-  </head>
-  <body>
-    <!-- START SWITCH BUTTON DARK MODE -->
 
-    <nav>
-      <div class="theme-switch-wrapper">
-        <label class="dayNight" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div></div>
-          <div class="stars"></div>
-          <div class="stars2"></div>
-        </label>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentação GLPI - Ramiro Campelo</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="icon2.png" sizes="16x16" type="image/png" />
+</head>
 
-    <!-- <nav>
+<body>
+  <!-- START SWITCH BUTTON DARK MODE -->
+
+  <nav>
+    <div class="theme-switch-wrapper">
+      <label class="dayNight" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div></div>
+        <div class="stars"></div>
+        <div class="stars2"></div>
+      </label>
+    </div>
+  </nav>
+
+  <!-- <nav>
       <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
@@ -34,603 +33,583 @@
         </label>
       </div>
     </nav> -->
-    <!-- END SWITCH BUTTON DARK MODE -->
+  <!-- END SWITCH BUTTON DARK MODE -->
 
-    <!-- START NAVBAR -->
-    <div class="sidenav">
-      <!-- <div class="contenedor-menu"> -->
-      <a href="#header">
-        <img
-          src="https://i.ibb.co/7QwyRpD/gruporclogo4-PNG.png"
-          alt="Logo RC"
-          class="logo__img"
-        />
+  <!-- START NAVBAR -->
+  <div class="sidenav">
+    <!-- <div class="contenedor-menu"> -->
+    <a href="#header">
+      <img src="images/gruporclogo4-PNG.png" alt="Logo RC" class="logo__img" />
+    </a>
+
+    <div id="sidenav__script">
+      <a href="#section-1" class="sidenav__">Página Inicial</a>
+      <a href="#section-2" class="sidenav__">Login</a>
+      <a href="#section-3" class="sidenav__">Início GLPI</a>
+      <!-- <a href="#section-4" class="sidenav__">Interface Padrão</a> -->
+      <a href="#section-5" class="sidenav__">
+        Interface Administrativa e Suporte
       </a>
+      <a href="#section-entities" class="sidenav__">Entidades</a>
 
-      <div id="sidenav__script">
-        <a href="#section-1" class="sidenav__">Página Inicial</a>
-        <a href="#section-2" class="sidenav__">Login</a>
-        <a href="#section-3" class="sidenav__">Início GLPI</a>
-        <a href="#section-4" class="sidenav__">Interface Padrão</a>
-        <a href="#section-5" class="sidenav__">
-          Interface Administrativa e Suporte
-        </a>
-
-        <button class="dropdown-btn">
-          Chamados
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="#section-6" class="sidenav__">Interface</a>
-          <a href="#section-7" class="sidenav__"> Abertura de chamado </a>
-          <a href="#section-8" class="sidenav__"> Acompanhamento de chamado </a>
-          <a href="#section-9" class="sidenav__"> Solução do chamado </a>
-          <a href="#section-10" class="sidenav__"> Aprovação do chamado </a>
-          <a href="#section-11" class="sidenav__">Reabrindo chamado</a>
-          <a href="#section-12" class="sidenav__">Clonando chamados</a>
-          <a href="#section-13" class="sidenav__">
-            Abertura de chamado por e-mail
-          </a>
-        </div>
-
-        <a href="#section-14" class="sidenav__"> Dashboard</a>
-      </div>
-
-      <div class="copyright">
-        <a
-          href="https://github.com/adrielgama/GLPI"
-          title="Repositório Oficial da Documentação"
-          target="_blank"
-        >
-          DTI Ramiro Campelo © 2021
+      <button class="dropdown-btn">
+        Chamados
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#section-6" class="sidenav__">Interface</a>
+        <a href="#section-7" class="sidenav__"> Abertura de chamado </a>
+        <a href="#section-8" class="sidenav__"> Acompanhamento de chamado </a>
+        <a href="#section-9" class="sidenav__"> Solução do chamado </a>
+        <a href="#section-10" class="sidenav__"> Aprovação do chamado </a>
+        <a href="#section-11" class="sidenav__">Reabrindo chamado</a>
+        <a href="#section-12" class="sidenav__">Clonando chamados</a>
+        <a href="#section-13" class="sidenav__">
+          Abertura de chamado por e-mail
         </a>
       </div>
-    </div>
-    <!-- END NAVBAR -->
-    <div class="header___" id="header">
-      <h1 id="documentaoglpiramirocampelo">
-        Documentação GLPI - Ramiro Campelo
-      </h1>
 
-      <blockquote class="block__header">
-        <p>
-          O objetivo geral dessa documentação é apresentação básica do uso do
-          sistema para o Suporte Técnico.
-        </p>
-      </blockquote>
-    </div>
-    <div class="container">
-      <div class="images__logo">
-        <img
-          src="https://glpi-project.org/wp-content/uploads/2017/03/logo-glpi-bleu-1.png"
-          alt=""
-          class="__logo"
-        />
-        <img
-          src="https://raw.githubusercontent.com/adrielgama/colegio-3-milenio/master/gruporc/gruporc_logo_400.png"
-          alt=""
-          class="__logo"
-        />
-      </div>
+      <a href="#section-14" class="sidenav__"> Dashboard</a>
     </div>
 
-    <!-- BADGES -->
-    <div class="container">
-      <div class="badges">
-        <img
-          src="https://img.shields.io/badge/project-OpenSource-blue"
-          alt=""
-        />
-        <img
-          src="https://img.shields.io/badge/glpi_version-9.5.3-ffea00"
-          alt=""
-        />
-        <img
-          src="https://img.shields.io/badge/custom-Projetos_DTI-sucess"
-          alt=""
-        />
-        <img src="https://img.shields.io/badge/doc_version-1.0-orange" alt="" />
-      </div>
+    <div class="copyright">
+      <a href="https://github.com/adrielgama/GLPI" title="Repositório Oficial da Documentação" target="_blank">
+        DTI Ramiro Campelo © 2021
+      </a>
     </div>
+  </div>
+  <!-- END NAVBAR -->
+  <div class="header___" id="header">
+    <h1 id="documentaoglpiramirocampelo">
+      Documentação GLPI - Ramiro Campelo
+    </h1>
 
-    <!-- -------------------------------------------
+    <blockquote class="block__header">
+      <p>
+        O objetivo geral dessa documentação é apresentação básica do uso do
+        sistema para o Suporte Técnico.
+      </p>
+    </blockquote>
+  </div>
+  <div class="container">
+    <div class="images__logo">
+      <img src="images/logo-glpi-bleu-1.png" alt="" class="__logo" />
+      <img src="images/gruporc_logo_400.png" alt="" class="__logo" />
+    </div>
+  </div>
+
+  <!-- BADGES -->
+  <div class="container">
+    <div class="badges">
+      <img src="https://img.shields.io/badge/project-OpenSource-blue" alt="" />
+      <img src="https://img.shields.io/badge/glpi_version-9.5.3-ffea00" alt="" />
+      <img src="https://img.shields.io/badge/custom-Projetos_DTI-sucess" alt="" />
+      <img src="https://img.shields.io/badge/doc_version-1.0-orange" alt="" />
+    </div>
+  </div>
+
+  <!-- -------------------------------------------
     ######## INICIO DO BODY CONTAINER  #############
     -------------------------------------------- -->
-    <main>
-      <div class="container-body">
+  <main>
+    <div class="container-body">
+      <hr />
+
+      <!-- ABOUT GLPI  -->
+      <section>
+        <h3 id="sobreoglpi">Sobre o GLPI</h3>
+
+        <p>
+          O <strong>GLPI</strong> é uma aplicação de gestão de serviços e
+          gerenciamento de ativos 100% web. Foi prioritariamente desenvolvida
+          para atender às necessidades de Gestores de TI no gerenciamento de
+          chamados de Helpdesk e transformou-se numa poderosa plataforma de
+          gerenciamento de ativos e serviços, provendo aos gestores
+          informações “on time” de seus recursos físicos e humanos.
+        </p>
+
+        <h3 id="principaisfuncionalidades">Principais Funcionalidades</h3>
+
+        <ul class="list__view">
+          <li>100% online;</li>
+
+          <li>
+            Sistema de abertura, acompanhamento e notificação de chamados por
+            e-mail;
+          </li>
+
+          <li>
+            Sistema de notificação de abertura e fechamento de chamados pelo
+            Telegram;
+          </li>
+
+          <li>Projeto OpenSource;</li>
+
+          <li>Catálogo de serviços;</li>
+
+          <li>Gestão de níveis de serviço (SLAs e OLAs);</li>
+
+          <li>Assistência ao usuário;</li>
+
+          <li>Relatórios com gráficos;</li>
+
+          <li>Acompanhamento gráfico de chamados;</li>
+
+          <li>Integração com OCS Inventory NG.</li>
+        </ul>
+      </section>
+
+      <br />
+      <br />
+
+      <!-- PÁGINA INICIAL  -->
+      <section id="section-1">
+        <h1 id="home">Página Inicial</h1>
+
+        <p>
+          Para fazer o acesso ao GLPI o usuário deverá acessar digitando IP
+          <a href="http://10.99.2.7/" class="link__body" target="_blank">http://10.99.2.7/</a>
+          em seu navegador.
+        </p>
+      </section>
+
+      <br />
+
+      <!-- LOGIN  -->
+      <section id="section-2">
+        <h2 id="login">Login:</h2>
+
+        <p>Ao fazer o acesso o usuário terá até três opções de login:</p>
+
+        <p>
+          <img src="images/01Login.png" alt="Login" class="images" />
+        </p>
+        <br />
+        <ol class="list__number">
+          <li>Banco de dados interno do GLPI</li>
+          <blockquote>Uso exclusivo do administrador do sistema</blockquote>
+
+          <strong>
+            <li class="contrast">GUAIBIM <em>(acesso padrão)</em></li>
+          </strong>
+          <blockquote>
+            Usado por todos os usuários com seu login GEMCO
+          </blockquote>
+
+          <li>Login por E-mail.</li>
+          <blockquote>Para quem não possui usuário GEMCO.</blockquote>
+        </ol>
+        <br />
+      </section>
+
+      <!-- INICIO GLPI  -->
+      <section id="section-3">
+        <h1 id="glpi">Início GLPI</h1>
+
+        <p>
+          Atualmente temos dois exemplos de página inicial, separadas por
+          grupos, sendo eles o grupo <strong>Administrativo</strong> e
+          <strong>Suporte</strong>, e o grupo para usuários
+          <strong>Padrão</strong>, com uma diferença de interface de uso e
+          tópicos para abertura de chamados.
+        </p>
+      </section>
+
+      <!-- INTERFACE PADRÃO  -->
+      <!-- <section id="section-4">
+        <h3 id="interface-padrao">Interface Padrão:</h3>
+
+        <p>
+          <img src="images/02Home1.png" alt="Interface Padrão" class="images" />
+        </p>
+
+        <p>
+          Esta interface oferece o método de abertura de chamados por meio de
+          formulários integrados com próprio GLPI, facilitando a abertura de
+          chamados por categoria ou dúvidas do usuário de forma mais
+          interativa, também possibilitando a abertura de chamados de forma
+          livre, porém seguindo critérios pré-estabelecidos para que possa ser
+          feito acompanhamento integral pelo técnico ou supervisor que for
+          atribuído à requisição.
+        </p>
         <hr />
+      </section> -->
 
-        <!-- ABOUT GLPI  -->
-        <section>
-          <h3 id="sobreoglpi">Sobre o GLPI</h3>
 
-          <p>
-            O <strong>GLPI</strong> é uma aplicação de gestão de serviços e
-            gerenciamento de ativos 100% web. Foi prioritariamente desenvolvida
-            para atender às necessidades de Gestores de TI no gerenciamento de
-            chamados de Helpdesk e transformou-se numa poderosa plataforma de
-            gerenciamento de ativos e serviços, provendo aos gestores
-            informações “on time” de seus recursos físicos e humanos.
-          </p>
+      <!-- INTERFACE ADMINISTRATIVGA E SUPORTE  -->
+      <section id="section-5">
+        <h3 id="interface-administrativa-e-suporte">
+          Interface Administrativa e Suporte
+        </h3>
 
-          <h3 id="principaisfuncionalidades">Principais Funcionalidades</h3>
+        <p>
+          <img src="images/03HomeN1.png" alt="Interface Administrativa" class="images" />
+        </p>
 
-          <ul class="list__view">
-            <li>100% online;</li>
+        <p>
+          A interface administrativa ou de suporte tem um diferencial por já
+          ser mais direta aos chamados criados ou atribuídos ao técnico em
+          questão. Nele também podemos ter um melhor acompanhamento dos
+          chamados, criar novos, efetuar configurações de acordo ao seu nível,
+          gerar relatórios e acompanhar informações por meios de gráficos e um
+          <em>dashboard</em> interativo.
+        </p>
+      </section>
 
-            <li>
-              Sistema de abertura, acompanhamento e notificação de chamados por
-              e-mail;
-            </li>
+      <br>
+      <!-- ENTIDADES  -->
+      <section id="section-entities">
+        <h1>
+          Entidades
+        </h1>
+        <p>
+          As entidades servem para fazer a separação dos setores.
+          Nelas cada setor poderá direcionar chamados que podem ser internamente, ou até mesmo utilizar o
+          <a href="#grupoGeralENTIDADE" class="link__body"> grupo geral de chamados</a>
+          para enviar sua solicitação de suporte para DTI.
+        </p>
+        <p>
+          Para navegar entre as entidades que o usuário tem acesso basta seguir o vídeo abaixo selecionando a
+          entidade destino.
+        </p>
+        <p>
+          <img src="videos/entidades.gif" alt="entidades" class="images">
+        </p>
+        <br>
+        <blockquote>
+          O usuário comum só tem acesso às entidades a qual está cadastrada, os chamados são diferentes em
+          cada uma das entidades e uma não tem acesso à outra.
+        </blockquote>
 
-            <li>
-              Sistema de notificação de abertura e fechamento de chamados pelo
-              Telegram;
-            </li>
+        <h3>
+          Ao todo possuímos 10 entidades. São elas:
+        </h3>
+        <br>
+        <ul class="list__view">
+          <li class="contrast" id="grupoGeralENTIDADE">
+            GRUPO RC <em>(padrão)</em>
+            <p>Entidade geral de abertura de chamados para DTI</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            ASSISTÊNCIA TÉCNICA 1025
+            <p>?</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            AUDITORIA
+            <p>Entidade para abertura de chamados internos do setor de Auditoria</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            DEPTO ADM COMUNICAÇÃO
+            <p>Entidade para abertura de chamados internos do departamento de Comunicação;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            DEPTO DE MKT - JORNAIS DE OFERTAS
+            <p>Entidade para abertura de chamados internos do departamento de Marketing;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            DEPTO FINANCEIRO
+            <p>Entidade para abertura de chamados internos do setor Financeiro;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            DEPTO OMA - LIBERAÇÕES
+            <p>Entidade para abertura de chamados internos do setor de Liberações;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            DTI - PLANTÃO
+            <p>Entidade para abertura de chamados ao DTI nos turnos de plantão aos fins de semana;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+        </ul>
 
-            <li>Projeto OpenSource;</li>
 
-            <li>Catálogo de serviços;</li>
+      </section>
 
-            <li>Gestão de níveis de serviço (SLAs e OLAs);</li>
+      <!-- CHAMADOS  -->
+      <section id="section-6">
+        <h1 id="chamados">Chamados</h1>
 
-            <li>Assistência ao usuário;</li>
+        <p>
+          Na interface de chamados observamos diversos tópicos, nos dando a
+          possibilidade de acompanhar chamados em todas as suas fases, desde
+          abertura até o fechamento, utilizando os filtros de pesquisa, que
+          por padrão só mostram chamados ainda não solucionados.
+        </p>
 
-            <li>Relatórios com gráficos;</li>
+        <p>
+          <img src="images/04-Home-Chamados.png" alt="Interface Chamados" class="images" />
+        </p>
+      </section>
 
-            <li>Acompanhamento gráfico de chamados;</li>
+      <!-- ABERTURA DE CHAMADO  -->
+      <section id="section-7">
+        <h2 id="abertura-de-chamado">Abertura de chamado</h2>
 
-            <li>Integração com OCS Inventory NG.</li>
-          </ul>
-        </section>
-
+        <p>
+          Para criar um novo chamado o técnico deverá acessar o menu
+          <code>Assistência &gt; Criar chamado</code>, ou utilizar o botão
+          <strong><code>+</code></strong> ao lado do nome
+          <code>Chamados</code> como na imagem abaixo:
+        </p>
         <br />
-        <br />
-
-        <!-- PÁGINA INICIAL  -->
-        <section id="section-1">
-          <h1 id="home">Página Inicial</h1>
-
-          <p>
-            Para fazer o acesso ao GLPI o usuário deverá acessar digitando IP
-            <a href="http://10.99.2.7/" class="link__body" target="_blank"
-              >http://10.99.2.7/</a
-            >
-            em seu navegador.
-          </p>
-        </section>
-
-        <br />
-
-        <!-- LOGIN  -->
-        <section id="section-2">
-          <h2 id="login">Login:</h2>
-
-          <p>Ao fazer o acesso o usuário terá até três opções de login:</p>
-
-          <p>
-            <img
-              src="https://i.ibb.co/SNJ0h70/01Login.png"
-              alt="Login"
-              class="images"
-            />
-          </p>
-          <br />
-          <ol class="list__number">
-            <li>Banco de dados interno do GLPI</li>
-            <blockquote>Uso exclusivo do administrador do sistema</blockquote>
-
-            <strong>
-              <li class="contrast">GUAIBIM <em>(acesso padrão)</em></li>
-            </strong>
-            <blockquote>
-              Usado por todos os usuários com seu login GEMCO
-            </blockquote>
-
-            <li>Login por E-mail.</li>
-            <blockquote>Para quem não possui usuário GEMCO.</blockquote>
-          </ol>
-          <br />
-        </section>
-
-        <!-- INICIO GLPI  -->
-        <section id="section-3">
-          <h1 id="glpi">Início GLPI</h1>
-
-          <p>
-            Atualmente temos dois exemplos de página inicial, separadas por
-            grupos, sendo eles o grupo <strong>Administrativo</strong> e
-            <strong>Suporte</strong>, e o grupo para usuários
-            <strong>Padrão</strong>, com uma diferença de interface de uso e
-            tópicos para abertura de chamados.
-          </p>
-        </section>
-
-        <!-- INTERFACE PADRÃO  -->
-        <section id="section-4">
-          <h3 id="interface-padrao">Interface Padrão:</h3>
-
-          <p>
-            <img
-              src="https://i.ibb.co/qBxLpmF/02Home1.png"
-              alt="Interface Padrão"
-              class="images"
-            />
-          </p>
-
-          <p>
-            Esta interface oferece o método de abertura de chamados por meio de
-            formulários integrados com próprio GLPI, facilitando a abertura de
-            chamados por categoria ou dúvidas do usuário de forma mais
-            interativa, também possibilitando a abertura de chamados de forma
-            livre, porém seguindo critérios pré-estabelecidos para que possa ser
-            feito acompanhamento integral pelo técnico ou supervisor que for
-            atribuído à requisição.
-          </p>
-        </section>
-
-        <hr />
-
-        <!-- INTERFACE ADMINISTRATIVGA E SUPORTE  -->
-        <section id="section-5">
-          <h3 id="interface-administrativa-e-suporte">
-            Interface Administrativa e Suporte
-          </h3>
-
-          <p>
-            <img
-              src="https://i.ibb.co/pPntZ9S/03HomeN1.png"
-              alt="Interface Administrativa"
-              class="images"
-            />
-          </p>
-
-          <p>
-            A interface administrativa ou de suporte tem um diferencial por já
-            ser mais direta aos chamados criados ou atribuídos ao técnico em
-            questão. Nele também podemos ter um melhor acompanhamento dos
-            chamados, criar novos, efetuar configurações de acordo ao seu nível,
-            gerar relatórios e acompanhar informações por meios de gráficos e um
-            <em>dashboard</em> interativo.
-          </p>
-        </section>
-
-        <!-- CHAMADOS  -->
-        <section id="section-6">
-          <h1 id="chamados">Chamados</h1>
-
-          <p>
-            Na interface de chamados observamos diversos tópicos, nos dando a
-            possibilidade de acompanhar chamados em todas as suas fases, desde
-            abertura até o fechamento, utilizando os filtros de pesquisa, que
-            por padrão só mostram chamados ainda não solucionados.
-          </p>
-
-          <p>
-            <img
-              src="https://i.ibb.co/xYQJ5Sz/04-Home-Chamados.png"
-              alt="Interface Chamados"
-              class="images"
-            />
-          </p>
-        </section>
-
-        <!-- ABERTURA DE CHAMADO  -->
-        <section id="section-7">
-          <h2 id="abertura-de-chamado">Abertura de chamado</h2>
-
-          <p>
-            Para criar um novo chamado o técnico deverá acessar o menu
-            <code>Assistência &gt; Criar chamado</code>, ou utilizar o botão
-            <strong><code>+</code></strong> ao lado do nome
-            <code>Chamados</code> como na imagem abaixo:
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/Br46RTH/08-New-Ticket.png"
-              alt="Criar novo chamado"
-              class="images"
-            />
-          </p>
-          <br />
-
-          <p>
-            Em seguida será direcionado para página em que deve
-            <strong>atentar-se aos campos obrigatórios</strong> de preenchimento
-            para que a abertura do chamado seja concretizada.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/bWypDrN/06-Abrir-Chamado-Por-Tecnico.png"
-              alt="Criar um chamado"
-              class="images"
-            />
-          </p>
-          <br />
-          <p>
-            Assim que finalizar abertura do chamado, retornando a tela inicial
-            em
-            <code>Assistência</code>.
-          </p>
-
-          <p>
-            Para ter acesso a mais informações sobre qualquer chamado, o técnico
-            deverá selecionar clicando no seu <strong>Título</strong>
-          </p>
-
-          <p>
-            Ao acessar o chamado o técnico irá se deparar com a tela a seguir:
-          </p>
-
-          <blockquote>
-            <p>
-              <em
-                >Caso apareça a tela da imagem de acompanhamento de chamado,
-                técnico deverá clicar na seção <code>Chamado</code> destacado ao
-                lado</em
-              >
-            </p>
-          </blockquote>
-
-          <p>
-            Aqui o técnico poderá atribuir o chamado para si ou algum outro
-            usuário, fazer alterações e atualizações na configuração do chamado
-            caso tenha necessidade. Se não houver alterações a fazer, poderá
-            prosseguir para página de acompanhamento do chamado.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/rs54c07/07-Chamado.png"
-              alt="Criar novo chamado"
-              class="images"
-            />
-          </p>
-        </section>
-
+        <p>
+          <img src="images/08-New-Ticket.png" alt="Criar novo chamado" class="images" />
+        </p>
         <br />
 
-        <!-- ACOMPANHAMENTO DE CHAMADO  -->
-        <section id="section-8">
-          <h2 id="acompanhamento-de-chamado">Acompanhamento de chamado</h2>
-
-          <p>
-            Abaixo a tela de acompanhamento do chamado, que deverá ser utilizada
-            para fazer atualizações pertinentes ao status do atendimento,
-            mantendo informado qualquer técnico, observador ou autor que esteja
-            em acompanhamento, solicitar aprovação de solução para um superior
-            quando necessário, ou aplicar uma solução para o chamado.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/bHJFzbM/05-Novo-Chamado-Inicial.png"
-              alt="Tela de acompanhamento do chamado"
-              class="images"
-            />
-          </p>
-          <br />
-          <p>
-            Para adicionar um novo acompanhamento ao chamado basta clicar no
-            botão
-            <code>Acompanhamento</code> e adicionar sua descrição, após isso
-            apenas clicar em <code>Adicionar</code> que seu acompanhamento será
-            enviado, junto com uma notificação para o e-mail do autor, caso este
-            tenha um e-mail cadastrado em sua conta.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/QNSDGWP/09-Acompanhamento.png"
-              alt="Acompanhamento de chamado"
-              class="images"
-            />
-          </p>
-        </section>
-
+        <p>
+          Em seguida será direcionado para página em que deve
+          <strong>atentar-se aos campos obrigatórios</strong> de preenchimento
+          para que a abertura do chamado seja concretizada.
+        </p>
         <br />
-
-        <!-- SOLUÇÃO DO CHAMADO  -->
-        <section id="section-9">
-          <h2 id="solucao-do-chamado">Solução do chamado</h2>
-
-          <p>
-            Ao executar a tarefa de <code>Solução</code> temos acesso à alguns
-            modelos já pré-definidos de solução, juntamente com o tipo da
-            solução, facilitando a resposta dos chamados.
-          </p>
-
-          <p>
-            <img
-              src="https://i.ibb.co/PFX3GCk/10-Modelo-Solucao.png"
-              alt="Solução Chamado"
-              class="images"
-            />
-          </p>
-
-          <p>
-            <img
-              src="https://i.ibb.co/L6WCLBy/11-Solucao-Chamado.png"
-              alt="Solução Chamado 2"
-              class="images"
-            />
-          </p>
-        </section>
-
+        <p>
+          <img src="images/06-Abrir-Chamado-Por-Tecnico.png" alt="Criar um chamado" class="images" />
+        </p>
         <br />
+        <p>
+          Assim que finalizar abertura do chamado, retornando a tela inicial
+          em
+          <code>Assistência</code>.
+        </p>
 
-        <!-- APROVAÇÃO DO CHAMADO  -->
-        <section id="section-10">
-          <h2 id="aprovacao-do-chamado">Aprovação do chamado</h2>
+        <p>
+          Para ter acesso a mais informações sobre qualquer chamado, o técnico
+          deverá selecionar clicando no seu <strong>Título</strong>
+        </p>
 
-          <p>
-            Ao enviar o formulário o chamado constará como modo
-            <code>Solucionado</code>, aguardando que o autor do chamado aprove a
-            solução enviada pelo técnico.
-          </p>
+        <p>
+          Ao acessar o chamado o técnico irá se deparar com a tela a seguir:
+        </p>
 
-          <blockquote>
-            <p>
-              Caso quem tenha feito a abertura do chamado e aplicado modelo de
-              solução tenha sido o próprio técnico, ele mesmo poderá fazer a
-              aprovação da solução.
-            </p>
-          </blockquote>
-          <br />
+        <blockquote>
           <p>
-            <img
-              src="https://i.ibb.co/LvCLhGT/12-Tela-Aprovacao-Autor.png"
-              alt="Aguardando Aprovação AUTOR"
-              class="images"
-            />
+            <em>Caso apareça a tela da imagem de acompanhamento de chamado,
+              técnico deverá clicar na seção <code>Chamado</code> destacado ao
+              lado</em>
           </p>
-          <br />
-          <p>
-            Após aprovação, o status é alterado para
-            <code>Fechado</code> e o chamado é encerrado. Caso a aprovação seja
-            recusada, o chamado terá o do botão de solução disponível aguardando
-            uma nova atualização para que seja feito os passos até o fechamento
-            total do chamado.
-          </p>
-        </section>
+        </blockquote>
 
-        <!-- REABRINDO CHAMADOS -->
-        <section id="section-11">
-          <h2 id="reabrindo-chamado">Reabrindo chamado</h2>
+        <p>
+          Aqui o técnico poderá atribuir o chamado para si ou algum outro
+          usuário, fazer alterações e atualizações na configuração do chamado
+          caso tenha necessidade. Se não houver alterações a fazer, poderá
+          prosseguir para página de acompanhamento do chamado.
+        </p>
+        <br />
+        <p>
+          <img src="images/07-Chamado.png" alt="Criar novo chamado" class="images" />
+        </p>
+      </section>
 
-          <p>
-            O GLPI também dispõe de reabertura de chamado, que pode ocorrer por
-            uma solução aprovada apresentar falha futura, evitando a abertura de
-            uma nova assistência, o chamado pode ser reaberto e feito novo
-            acompanhamento até sua
-            <a href="#solucao-do-chamado" class="link__body">solução</a>.
-          </p>
+      <br />
 
+      <!-- ACOMPANHAMENTO DE CHAMADO  -->
+      <section id="section-8">
+        <h2 id="acompanhamento-de-chamado">Acompanhamento de chamado</h2>
+
+        <p>
+          Abaixo a tela de acompanhamento do chamado, que deverá ser utilizada
+          para fazer atualizações pertinentes ao status do atendimento,
+          mantendo informado qualquer técnico, observador ou autor que esteja
+          em acompanhamento, solicitar aprovação de solução para um superior
+          quando necessário, ou aplicar uma solução para o chamado.
+        </p>
+        <br />
+        <p>
+          <img src="images/05-Novo-Chamado-Inicial.png" alt="Tela de acompanhamento do chamado" class="images" />
+        </p>
+        <br />
+        <p>
+          Para adicionar um novo acompanhamento ao chamado basta clicar no
+          botão
+          <code>Acompanhamento</code> e adicionar sua descrição, após isso
+          apenas clicar em <code>Adicionar</code> que seu acompanhamento será
+          enviado, junto com uma notificação para o e-mail do autor, caso este
+          tenha um e-mail cadastrado em sua conta.
+        </p>
+        <br />
+        <p>
+          <img src="images/09-Acompanhamento.png" alt="Acompanhamento de chamado" class="images" />
+        </p>
+      </section>
+
+      <br />
+
+      <!-- SOLUÇÃO DO CHAMADO  -->
+      <section id="section-9">
+        <h2 id="solucao-do-chamado">Solução do chamado</h2>
+
+        <p>
+          Ao executar a tarefa de <code>Solução</code> temos acesso à alguns
+          modelos já pré-definidos de solução, juntamente com o tipo da
+          solução, facilitando a resposta dos chamados.
+        </p>
+
+        <p>
+          <img src="images/10-Modelo-Solucao.png" alt="Solução Chamado" class="images" />
+        </p>
+
+        <p>
+          <img src="images/11-Solucao-Chamado.png" alt="Solução Chamado 2" class="images" />
+        </p>
+      </section>
+
+      <br />
+
+      <!-- APROVAÇÃO DO CHAMADO  -->
+      <section id="section-10">
+        <h2 id="aprovacao-do-chamado">Aprovação do chamado</h2>
+
+        <p>
+          Ao enviar o formulário o chamado constará como modo
+          <code>Solucionado</code>, aguardando que o autor do chamado aprove a
+          solução enviada pelo técnico.
+        </p>
+
+        <blockquote>
           <p>
-            Basta o usuário acessar o chamado fechado, ir na aba
-            <code>Chamado</code> e clicar em <code>Reabrir</code>.
+            Caso quem tenha feito a abertura do chamado e aplicado modelo de
+            solução tenha sido o próprio técnico, ele mesmo poderá fazer a
+            aprovação da solução.
           </p>
-          <br />
+        </blockquote>
+        <br />
+        <p>
+          <img src="images/12-Tela-Aprovacao-Autor.png" alt="Aguardando Aprovação AUTOR" class="images" />
+        </p>
+        <br />
+        <p>
+          Após aprovação, o status é alterado para
+          <code>Fechado</code> e o chamado é encerrado. Caso a aprovação seja
+          recusada, o chamado terá o do botão de solução disponível aguardando
+          uma nova atualização para que seja feito os passos até o fechamento
+          total do chamado.
+        </p>
+      </section>
+
+      <!-- REABRINDO CHAMADOS -->
+      <section id="section-11">
+        <h2 id="reabrindo-chamado">Reabrindo chamado</h2>
+
+        <p>
+          O GLPI também dispõe de reabertura de chamado, que pode ocorrer por
+          uma solução aprovada apresentar falha futura, evitando a abertura de
+          uma nova assistência, o chamado pode ser reaberto e feito novo
+          acompanhamento até sua
+          <a href="#solucao-do-chamado" class="link__body">solução</a>.
+        </p>
+
+        <p>
+          Basta o usuário acessar o chamado fechado, ir na aba
+          <code>Chamado</code> e clicar em <code>Reabrir</code>.
+        </p>
+        <br />
+        <p>
+          <img src="images/13-Reabrir-Chamado.png" alt="Reabrir chamado fechado" class="images" />
+        </p>
+      </section>
+
+      <br />
+
+      <!-- CLONANDO CHAMADOS -->
+      <section id="section-12">
+        <h2 id="clonando-chamados">Clonando chamados</h2>
+
+        <p>
+          Para clonar/duplicar o chamado, basta que o técnico selecione o
+          chamado desejado, e acessar botão
+          <code>Ações &gt; Clonar</code> escolha a quantidade de cópias
+          necessárias para o chamado.
+        </p>
+
+        <p>
+          <img src="videos/Clonar-Chamado-GIF.gif" alt="Clonar Chamado GIF" class="images" />
+        </p>
+      </section>
+
+      <br />
+
+      <!-- ABERTURA DE CHAMADO POR EMAIL -->
+      <section id="section-13">
+        <h2 id="abertura-de-chamado-por-e-mail">
+          Abertura de chamado por e-mail
+        </h2>
+
+        <p>
+          Uma das novas funcionalidades é abertura de chamado utilizando o
+          e-mail. Para isso o usuário precisa ter um endereço de e-mail válido
+          cadastrado em nosso sistema, seja ele vinculado ao perfil
+          <a href="#login" class="link__body">GUAIBIM</a> ou
+          <a href="#login" class="link__body">Login por e-mail</a>.
+        </p>
+
+        <p>
+          Basta que o usuário envie um e-mail para
+          <strong>ti.chamados@lojasguaibim.com.br</strong> com
+          <code>Assunto</code> <em>(que será o título do chamado)</em>, e
+          <code>Corpo</code> <em>(que será a descrição)</em>.
+        </p>
+
+        <blockquote>
           <p>
-            <img
-              src="https://i.ibb.co/t33hNpV/13-Reabrir-Chamado.png"
-              alt="Reabrir chamado fechado"
-              class="images"
-            />
+            Preferencialmente todo chamado, seja aberto ou respondido pelo
+            e-mail em forma de acompanhamento,
+            <strong>deve ser removido todo o corpo de assinatura</strong>,
+            para facilitar o uso da aplicação e também o acompanhamento das
+            notificações que chegarão por e-mail, para não deixar uma
+            aparência poluída.
           </p>
-        </section>
+        </blockquote>
+        <br />
+        <p>
+          <img src="videos/New-Ticket-Mail-GIF.gif" alt="Abrindo chamado por email" class="images" />
+        </p>
+      </section>
+
+      <br />
+
+      <!-- DASHBOARD -->
+      <section id="section-14">
+        <h1 id="dashboard">Dashboard</h1>
+
+        <p>
+          O painel de controle é acessado na aba
+          <code>Plug-ins &gt; Painel</code>.
+        </p>
+        <br />
+        <p>
+          <img src="images/14-Dashboard-Tec.png" alt="Dashboard" class="images" />
+        </p>
 
         <br />
 
-        <!-- CLONANDO CHAMADOS -->
-        <section id="section-12">
-          <h2 id="clonando-chamados">Clonando chamados</h2>
-
-          <p>
-            Para clonar/duplicar o chamado, basta que o técnico selecione o
-            chamado desejado, e acessar botão
-            <code>Ações &gt; Clonar</code> escolha a quantidade de cópias
-            necessárias para o chamado.
-          </p>
-
-          <p>
-            <img
-              src="https://i.ibb.co/KVKXHR8/Clonar-Chamado-GIF.gif"
-              alt="Clonar Chamado GIF"
-              class="images"
-            />
-          </p>
-        </section>
-
+        <p>
+          Nele o técnico tem acesso ao seu histórico de chamados em um
+          determinado período. O histórico é apresentado em formato de
+          gráficos com informações como quantidade de chamados atendidos,
+          chamados atribuídos, tempo de solução dos chamados e até mesmo sua
+          pontuação na pesquisa de satisfação, um painel completo sobre um
+          resumo do técnico.
+        </p>
         <br />
-
-        <!-- ABERTURA DE CHAMADO POR EMAIL -->
-        <section id="section-13">
-          <h2 id="abertura-de-chamado-por-e-mail">
-            Abertura de chamado por e-mail
-          </h2>
-
-          <p>
-            Uma das novas funcionalidades é abertura de chamado utilizando o
-            e-mail. Para isso o usuário precisa ter um endereço de e-mail válido
-            cadastrado em nosso sistema, seja ele vinculado ao perfil
-            <a href="#login" class="link__body">GUAIBIM</a> ou
-            <a href="#login" class="link__body">Login por e-mail</a>.
-          </p>
-
-          <p>
-            Basta que o usuário envie um e-mail para
-            <strong>ti.chamados@lojasguaibim.com.br</strong> com
-            <code>Assunto</code> <em>(que será o título do chamado)</em>, e
-            <code>Corpo</code> <em>(que será a descrição)</em>.
-          </p>
-
-          <blockquote>
-            <p>
-              Preferencialmente todo chamado, seja aberto ou respondido pelo
-              e-mail em forma de acompanhamento,
-              <strong>deve ser removido todo o corpo de assinatura</strong>,
-              para facilitar o uso da aplicação e também o acompanhamento das
-              notificações que chegarão por e-mail, para não deixar uma
-              aparência poluída.
-            </p>
-          </blockquote>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/NmpJRbD/New-Ticket-Mail-GIF.gif"
-              alt="Abrindo chamado por email"
-              class="images"
-            />
-          </p>
-        </section>
-
-        <br />
-
-        <!-- DASHBOARD -->
-        <section id="section-14">
-          <h1 id="dashboard">Dashboard</h1>
-
-          <p>
-            O painel de controle é acessado na aba
-            <code>Plug-ins &gt; Painel</code>.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/tCy3Qjj/14-Dashboard-Tec.png"
-              alt="Dashboard"
-              class="images"
-            />
-          </p>
-
-          <br />
-
-          <p>
-            Nele o técnico tem acesso ao seu histórico de chamados em um
-            determinado período. O histórico é apresentado em formato de
-            gráficos com informações como quantidade de chamados atendidos,
-            chamados atribuídos, tempo de solução dos chamados e até mesmo sua
-            pontuação na pesquisa de satisfação, um painel completo sobre um
-            resumo do técnico.
-          </p>
-          <br />
-          <p>
-            <img
-              src="https://i.ibb.co/JCKL59S/15-Dash-Painel.png"
-              alt="Dashboard Tec"
-              class="images"
-            />
-          </p>
-        </section>
-      </div>
-    </main>
-    <!-- -------------------------------------------
+        <p>
+          <img src="images/15-Dash-Painel.png" alt="Dashboard Tec" class="images" />
+        </p>
+      </section>
+    </div>
+  </main>
+  <!-- -------------------------------------------
     ########## FIM DO BODY CONTAINER  ##############
     -------------------------------------------- -->
-    <script src="js/dropdown.js"></script>
-    <script src="js/dark.js"></script>
-  </body>
+  <script src="js/dropdown.js"></script>
+  <script src="js/dark.js"></script>
+</body>
+
 </html>
