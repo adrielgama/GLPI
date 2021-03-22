@@ -10,6 +10,7 @@
   --h2-line-bottom: rgba(128, 128, 128, 0.33);
   --ul-ol-color: #6d6d6d;
   --contrast-color: #ff6a13;
+  --contrast2-color: #1371ff;
   --code-color: rgba(0, 0, 0, 0.082);
   --link-color: rgb(98, 185, 255);
 }
@@ -17,13 +18,14 @@
 [data-theme="dark"] {
   --body-bg: #1b1b1b;
   --blockquote-color: rgba(255, 255, 255, 0.233);
-  --blockquote-text: #ebebeb;
+  --blockquote-text: rgba(235, 235, 235, 0.507);
   --blockquote-paragraph: rgba(255, 255, 255, 0.705);
   --hr-color: #4d4d4d;
   --font-color: rgba(255, 255, 255, 0.842);
   --h2-line-bottom: rgba(99, 99, 99, 0.33);
-  --ul-ol-color: rgba(255, 255, 255, 0.562);
+  --ul-ol-color: rgba(255, 255, 255, 0.938);
   --contrast-color: rgba(72, 255, 154, 0.904);
+  --contrast2-color: rgba(188, 72, 255, 0.904);
   --code-color: rgba(226, 226, 226, 0.247);
   --link-color: rgb(98, 185, 255);
 }
@@ -248,6 +250,12 @@ ol.list__number {
 .contrast {
   /* font-size: 1.4rem; */
   color: var(--contrast-color);
+  font-weight: 900;
+}
+
+.contrast-2 {
+  /* font-size: 1.4rem; */
+  color: var(--contrast2-color);
   font-weight: 900;
 }
 

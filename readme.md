@@ -54,7 +54,7 @@ O **GLPI** é uma aplicação de gestão de serviços e gerenciamento de ativos 
 
 # Página Inicial
 
-Para fazer o acesso ao GLPI o usuário deverá acessar digitando IP [http://10.99.2.7/](http://10.99.2.7/) em seu navegador.
+Para fazer o acesso ao GLPI o usuário deverá acessar digitando IP [http://10.99.1.19/](http://10.99.1.19/) em seu navegador.
 
 ## Login:
 
