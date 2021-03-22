@@ -258,48 +258,74 @@
         </blockquote>
 
         <h3>
-          Ao todo possuímos 10 entidades. São elas:
+          Ao todo são 13 entidades:
         </h3>
         <br>
         <ul class="list__view">
           <li class="contrast" id="grupoGeralENTIDADE">
             GRUPO RC <em>(padrão)</em>
-            <p>Entidade geral de abertura de chamados para DTI</p>
+            <p>> Entidade geral de abertura de chamados para DTI</p>
+          </li>
+          <br>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>ASSISTÊNCIA TÉCNICA 1025</strong>
+            <p>Entidade para abertura de chamados internos do setor de Assistência Técnica</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            ASSISTÊNCIA TÉCNICA 1025
-            <p>?</p>
-          </li>
-          <!-- ------------------------------------------- -->
-          <li>
-            AUDITORIA
+            <strong>AUDITORIA</strong>
             <p>Entidade para abertura de chamados internos do setor de Auditoria</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            DEPTO ADM COMUNICAÇÃO
+            <strong>DEPTO ADM COMUNICAÇÃO</strong>
             <p>Entidade para abertura de chamados internos do departamento de Comunicação;</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            DEPTO DE MKT - JORNAIS DE OFERTAS
+            <strong>DEPTO ADM CRÉDITO</strong>
+            <p>Entidade para abertura de chamados internos do departamento de Crédito;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>DEPTO DE MKT - JORNAIS DE OFERTAS</strong>
             <p>Entidade para abertura de chamados internos do departamento de Marketing;</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            DEPTO FINANCEIRO
+            <strong>DEPTO FINANCEIRO</strong>
             <p>Entidade para abertura de chamados internos do setor Financeiro;</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            DEPTO OMA - LIBERAÇÕES
+            <strong>DEPTO OMA - LIBERAÇÕES</strong>
             <p>Entidade para abertura de chamados internos do setor de Liberações;</p>
           </li>
           <!-- ------------------------------------------- -->
           <li>
-            DTI - PLANTÃO
+            <strong>DTI - MANUTENÇÃO</strong>
+            <p>Entidade para abertura de chamados pelo setor de manutenções DTI;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>DTI - PLANTÃO</strong>
             <p>Entidade para abertura de chamados ao DTI nos turnos de plantão aos fins de semana;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>MALOTES</strong>
+            <p>Entidade para abertura de chamados internos do setor de malotes;</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>SETOR PESSOAL</strong>
+            <p>Entidade para abertura de chamados internos do Setor Pessoal (RH);</p>
+          </li>
+          <!-- ------------------------------------------- -->
+          <li>
+            <strong>SETOR PESSOAL(Ponto)</strong>
+            <p>Entidade para abertura de chamados internos do Setor Pessoal (RH);</p>
           </li>
           <!-- ------------------------------------------- -->
         </ul>
@@ -382,6 +408,16 @@
         <p>
           <img src="images/07-Chamado.png" alt="Criar novo chamado" class="images" />
         </p>
+
+        <br />
+        <p>
+          O técnico ainda tem a possibilidade de acrescentar um esquema de etiquetas
+          para auxiliar no fluxo e acompanhamento dos chamados na tela principal.
+        </p>
+
+        <p>
+          <img src="images/10EtiquetasChamados.png" alt="Solução Chamado" class="images" />
+        </p>
       </section>
 
       <br />
@@ -423,13 +459,9 @@
         <h2 id="solucao-do-chamado">Solução do chamado</h2>
 
         <p>
-          Ao executar a tarefa de <code>Solução</code> temos acesso à alguns
-          modelos já pré-definidos de solução, juntamente com o tipo da
-          solução, facilitando a resposta dos chamados.
-        </p>
-
-        <p>
-          <img src="images/10-Modelo-Solucao.png" alt="Solução Chamado" class="images" />
+          Ao clicar em <code>Solução</code> aparecem alguns campos que não precisam ser preenchidos, atentar-se somente
+          para o campo descrição, pois ele que irá chegar em notificação por e-mail para o usuário que abriu e também
+          observador acompanhando o chamado.
         </p>
 
         <p>
@@ -445,27 +477,24 @@
 
         <p>
           Ao enviar o formulário o chamado constará como modo
-          <code>Solucionado</code>, aguardando que o autor do chamado aprove a
-          solução enviada pelo técnico.
+          <code>Solucionado</code>, aguardando que o autor do chamado faça a pesquisa de satisfação.
+          Caso o requerente não efetue a pesquisa em até 7 dias, ela será automaticamente encerrada por completo.
         </p>
 
-        <blockquote>
+        <!-- <blockquote>
           <p>
-            Caso quem tenha feito a abertura do chamado e aplicado modelo de
-            solução tenha sido o próprio técnico, ele mesmo poderá fazer a
+            Se a abertura do chamado foi feito pelo o próprio técnico, ele mesmo poderá fazer a
             aprovação da solução.
           </p>
-        </blockquote>
-        <br />
-        <p>
+        </blockquote> -->
+        <!-- <p>
           <img src="images/12-Tela-Aprovacao-Autor.png" alt="Aguardando Aprovação AUTOR" class="images" />
-        </p>
-        <br />
+        </p> 
+        <br />-->
         <p>
           Após aprovação, o status é alterado para
-          <code>Fechado</code> e o chamado é encerrado. Caso a aprovação seja
-          recusada, o chamado terá o do botão de solução disponível aguardando
-          uma nova atualização para que seja feito os passos até o fechamento
+          <code>Fechado</code> e o chamado é encerrado. Caso a aprovação tenha qualquer inconsistência,
+          o chamado poderá ser reaberto e disponível para refazer todo processo até o fechamento
           total do chamado.
         </p>
       </section>
@@ -541,6 +570,13 @@
             para facilitar o uso da aplicação e também o acompanhamento das
             notificações que chegarão por e-mail, para não deixar uma
             aparência poluída.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            Importante salientar que o <code>Assunto</code> não deve ser modificado, para não perder toda a árvore de
+            acompanhamento do chamado.
           </p>
         </blockquote>
         <br />
